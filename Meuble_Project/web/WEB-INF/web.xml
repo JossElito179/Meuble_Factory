@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>InsertMeuble</servlet-name>
+        <servlet-class>controller.InsertMeuble</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertionStyle</servlet-name>
+        <servlet-class>controller.InsertionStyle</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StyleMatiereManager</servlet-name>
+        <servlet-class>controller.StyleMatiereManager</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertMeuble</servlet-name>
+        <url-pattern>/InsertMeuble</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertionStyle</servlet-name>
+        <url-pattern>/InsertionStyle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StyleMatiereManager</servlet-name>
+        <url-pattern>/StyleMatiereManager</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

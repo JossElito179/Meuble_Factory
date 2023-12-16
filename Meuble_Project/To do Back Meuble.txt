@@ -1,0 +1,42 @@
+Classes:
+	Class Meuble:
+		int id_meuble
+		String nom_modele
+		String nom_Grandeur
+		String nom_Style
+
+	Class Matiere:
+		int id_matiere
+		String nom_matiere
+		int id_style
+
+	Class Style:
+		int id_style
+		String nom_Style
+		ArrayList<Matiere> matierePrim
+	Class Categorire:
+		int id_categorie
+		String nom
+	Class Grandeur:
+		int id_grandeur
+		String nom
+	
+
+Fonction 
+	Meuble:
+		AllArguments in constructeur
+		void Insert(Connection)
+	Style:
+		insert()
+		  =>Boucle
+		findAll
+		ArrayList<Matiere> findAllByIdStyle(int id_Style)
+	Categorie:
+		findAll
+	Grandeur:
+		findAll
+
+Servlet:
+	InsertionStyle
+	InsertionMeuble 
+	GeterId Style return allMatiere

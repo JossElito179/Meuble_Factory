@@ -1,0 +1,19 @@
+.navbar{
+    background-color: white;
+}
+.table-hover{
+  background-color: rgb(31, 28, 61);
+  text-decoration: none;
+  }
+  th{
+  color: rgb(248, 244, 244);
+  }
+  td{
+  color: rgb(251, 253, 255);
+  }
+body{
+  background-color: rgb(253, 253, 253);
+}
+h3{
+  color: rgb(242, 242, 245);
+}
