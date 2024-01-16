@@ -3,18 +3,28 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/src/java/controller/StyleMatiereManager.java</file>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/web/index.jsp</file>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/web/selectionStyle.jsp</file>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/src/java/models/Matiere.java</file>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/src/java/models/Meuble.java</file>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/src/java/models/Style.java</file>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/src/java/controller/InsertMeuble.java</file>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/src/java/models/ModelDAO.java</file>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/src/java/models/ConnectionBase.java</file>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/web/detailMatierePremiere.jsp</file>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/web/styleInsert.jsp</file>
-            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Project/src/java/controller/InsertionStyle.java</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/selectionStyle.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/inc/header.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/MatierePremiere.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/src/java/controller/InsertionMeuble.java</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/detailMatierePremiere.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/src/java/models/ChooserPrice.java</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/achat.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/styleInsert.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/css/Style.css</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/src/java/controller/CommandeController.java</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/src/java/models/Meuble.java</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/matiere.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/composition.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/src/java/controller/InsertionFormule.java</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/Filtre.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/index.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/src/java/controller/FabricationController.java</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/src/java/controller/InsertMatiere.java</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/meubleInsert.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/Recherche.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/web/CreationMeuble.jsp</file>
+            <file>file:/C:/Users/joss%20elito/Documents/NetBeansProjects/Meuble_Factory/Meuble_Project/src/java/controller/FilterController.java</file>
         </group>
     </open-files>
 </project-private>

@@ -12,6 +12,30 @@
         <servlet-name>StyleMatiereManager</servlet-name>
         <servlet-class>controller.StyleMatiereManager</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>InsertMatiere</servlet-name>
+        <servlet-class>controller.InsertMatiere</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertionFormule</servlet-name>
+        <servlet-class>controller.InsertionFormule</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertionMeuble</servlet-name>
+        <servlet-class>controller.InsertionMeuble</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FilterController</servlet-name>
+        <servlet-class>controller.FilterController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CommandeController</servlet-name>
+        <servlet-class>controller.CommandeController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FabricationController</servlet-name>
+        <servlet-class>controller.FabricationController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>InsertMeuble</servlet-name>
         <url-pattern>/InsertMeuble</url-pattern>
@@ -23,6 +47,30 @@
     <servlet-mapping>
         <servlet-name>StyleMatiereManager</servlet-name>
         <url-pattern>/StyleMatiereManager</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertMatiere</servlet-name>
+        <url-pattern>/InsertMatiere</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertionFormule</servlet-name>
+        <url-pattern>/InsertionFormule</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertionMeuble</servlet-name>
+        <url-pattern>/InsertionMeuble</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FilterController</servlet-name>
+        <url-pattern>/FilterController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CommandeController</servlet-name>
+        <url-pattern>/CommandeController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FabricationController</servlet-name>
+        <url-pattern>/FabricationController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

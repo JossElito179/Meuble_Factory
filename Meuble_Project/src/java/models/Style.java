@@ -10,25 +10,25 @@ public class Style {
     	
                public  int id_style;
 		public String nom_Style;
-		public ArrayList<Matiere> matierePrim;
+		public ArrayList<Matiere> MatierePremierePrim;
 
-        // Id_StyleMatiere SERIAL,
+        // Id_StyleMatierePremiere SERIAL,
         // quantite DOUBLE PRECISION,
         // Id_Style INTEGER NOT NULL,
         // Id_MatirePremiere
 
         
 
-        public void insert(Connection connection,String [] quantite, String [] idMatiere) throws SQLException{
+        public void insert(Connection connection,String [] quantite, String [] idMatierePremiere) throws SQLException{
 			String query="insert into Style values (default,?)";
 			PreparedStatement pst=connection.prepareStatement(query);
 			pst.setString(1, this.nom_Style);
 			boolean rep=pst.execute();
             int id_style=this.getMaxRowCount(connection);
-            System.out.println(id_style+" id style matiere ");
+            System.out.println(id_style+" id style MatierePremiere ");
             this.setId_style(id_style);
-            for (int i=0 ; i<idMatiere.length;i++) {
-                this.insertWithStyle(connection,Double.valueOf(quantite[i]),Integer.valueOf(idMatiere[i]));   
+            for (int i=0 ; i<idMatierePremiere.length;i++) {
+                this.insertWithStyle(connection,Double.valueOf(quantite[i]),Integer.valueOf(idMatierePremiere[i]));   
             }
             connection.close();
 		}
@@ -76,22 +76,22 @@ public class Style {
         }
 
         public ArrayList<Matiere> getMatierePrim() {
-            return matierePrim;
+            return MatierePremierePrim;
         }
 
-        public void setMatierePrim(ArrayList<Matiere> matierePrim) {
-            this.matierePrim = matierePrim;
+        public void setMatierePremierePrim(ArrayList<Matiere> matierePrim) {
+            this.MatierePremierePrim = matierePrim;
         }
 
         public ArrayList<Matiere> getAllById(Connection connection) throws SQLException {
-            this.setMatierePrim(Matiere.getAllByStyle(connection, id_style));
+            this.setMatierePremierePrim(Matiere.getAllByStyle(connection, id_style));
             return this.getMatierePrim();
         }
 
         public Style(int id_style, String nom_Style, ArrayList<Matiere> matierePrim) {
             this.id_style = id_style;
             this.nom_Style = nom_Style;
-            this.matierePrim = matierePrim;
+            this.MatierePremierePrim = matierePrim;
         }
 
         public Style(int int1, String string) {

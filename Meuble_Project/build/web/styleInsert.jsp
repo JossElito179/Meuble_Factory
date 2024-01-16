@@ -17,12 +17,14 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <%
+            <%
                 ConnectionBase connection=new ConnectionBase();
-                Connection connex=connection.giveConSql();
-                ArrayList<Matiere> matieres=Matiere.getAll(connection.giveConSql());
-        %>
-        
+                ArrayList<Grandeur> gs=Grandeur.getGrandeur(connection.giveConSql());
+                ArrayList<Style> styles=Style.getStyle(connection.giveConSql());
+                ArrayList<Categorie> cts=Categorie.getAllCategories(connection.giveConSql());
+                MatierePremiere mat=new MatierePremiere();
+                ArrayList<MatierePremiere> mts=mat.findAllDAO(connection,MatierePremiere.class);
+            %>
         <script>
             function addMatiere(){
                 const child=document.querySelector(".container");
@@ -32,7 +34,7 @@
             
         </script> 
        <div class="col-lg-5 col-md-5 col-sm-5">
-            <span><h3>Insertion de matiere pour Style</h3></span>
+            <span><h3>Insertion de Matiere pour Style</h3></span>
             <form action="InsertionStyle" class="formu">
                 <div class="mb-3">
                     <div class="row">
@@ -43,9 +45,9 @@
                     <div class="row container">
                         <label for="" class="form-label">Nom</label>
                         <div class="col-lg-4 col-md-4 col-sm-4">
-                            <select name="matieres" class="form-select form-select-lg" id="">
-                                <% for(Matiere mat:matieres){ %>
-                                <option value="<%= mat.Id_MatirePremiere %>"><%= mat.nom_matiere %></option>
+                            <select name="Matieres" class="form-select form-select-lg" id="">
+                                <% for(Matiere mat:Matieres){ %>
+                                <option value="<%= mat.Id_MatirePremiere %>"><%= mat.nom_Matiere %></option>
                                 <% } %>
                             </select>   
                         </div>
