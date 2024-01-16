@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class Matiere {
+public class Matiere extends ModelDAO {
 
 
     public int Id_MatirePremiere ;

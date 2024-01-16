@@ -10,10 +10,10 @@ import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import models.ConnectionBase;
 import models.Style;
 
@@ -46,11 +46,11 @@ public class InsertionStyle extends HttpServlet {
             String noma=request.getParameter("nom_style");
             Style style=new Style(0,noma);
             String [] quantites=request.getParameterValues("quantites");
-            String [] matieres=request.getParameterValues("matieres");
+            String [] MatierePremieres=request.getParameterValues("MatierePremieres");
             ConnectionBase connection=new ConnectionBase();
-            style.insert(connection.giveConSql(), quantites, matieres);
+            style.insert(connection.giveConSql(), quantites, MatierePremieres);
             out.println(noma);
-            for(String str : matieres){
+            for(String str : MatierePremieres){
             out.println("<p>"+str+"</p>");
             }
             for(String strs : quantites){

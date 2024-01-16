@@ -30,9 +30,9 @@
                         </tr>
                     </thead>
                     <tbody id="">
-                        <% for (Matiere matiere: style.matierePrim){%>
+                        <% for (Matiere Matiere: style.MatierePrim){%>
                         <tr>
-                            <td><%= matiere.nom_matiere %></td>
+                            <td><%= Matiere.nom_Matiere %></td>
                         </tr>
                         <% } %>
                     </tbody>

@@ -1,75 +1,44 @@
-<%@page import="java.sql.Connection"%>
-<%@page import="models.Categorie"%>
-<%@page import="models.Style"%>
-<%@page import="models.Grandeur"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="models.ConnectionBase"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap-5.0.2-dist/css/bootstrap.css">
-    <title>Page0</title>
-</head>
-<style>
-    body{
-        margin: 0;
-        text-decoration: none;
-    }
-</style>
-<body>
-    <div class="container">
-        <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-5">
-            <%
 
-                ConnectionBase connection=new ConnectionBase();
-                ArrayList<Grandeur> gs=Grandeur.getGrandeur(connection.giveConSql());
-                ArrayList<Style> styles=Style.getStyle(connection.giveConSql());
-                ArrayList<Categorie> cts=Categorie.getAllCategories(connection.giveConSql());
-            %>
-            <h3 class="mb-3">Insertion Meuble</h3>
-            <form action="InsertMeuble" method="get">
-                <div class="mb-3">
-                    <div class="row">
-                        <label for="" class="form-label">Modele</label>
-                        <input type="text" name="nom" placeholder="Nom Modele" class="form-control" id="">
-                    </div>
-                    <div class="row">
-                        <label for="" class="form-label">Style</label>
-                        
-                        <select name="style" class="form-select form-select-lg" id="">
-                        <% for (Style stl: styles){%>
-                        <option value="<%= stl.getId_style() %>"><%= stl.getNom_Style() %></option>
-                            <% } %>
-                        </select>
-                    </div>
-                    <div class="row">
-                        <label for="" class="form-label">Categorie</label>
-                        <select name="categorie" class="form-select form-select-lg" id="">
-                        <% for (Categorie ct: cts){%>
-                        <option value="<%= ct.id_categorie %>"><%= ct.getNom() %></option>
-                            <% } %>
-                        </select>
-                    </div>
-                    <div class="row">
-                        <label for="" class="form-label">Grandeur</label>
-                        <select name="grandeur" class="form-select form-select-lg" id="">
-                        <% for (Grandeur gd:gs){%>
-                            <option value=""><%= gd.getNom() %></option>
-                            <% } %>
-                        </select>
-                    </div>
-                    <input type="submit" class="btn btn-primary" value="Enregistrer">
+<head>
+    <meta charset="utf-8">
+    <title>MeubleChic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="./css/Style.css" rel="stylesheet">
+    <link href="./css/other.css" rel="stylesheet">
+</head>
+
+<body>
+    <jsp:include page="inc/header.jsp"/>
+   
+    <div class="container-fluid bg-light pt-5 all-index">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col text-center mb-4">
+                    <h6 class="font-weight-normal text-uppercase mb-3 kami">Vivre chic   ,    luxe abordable</h6>
+                        <p class="text-intro">
+                         Nous vous offrons une gestion personnalisée de vos meubles, vous permettant de créer un espace qui répond à vos besoins et à votre esthétique.</p>
+                        <div class="row form-group">
+                            <input type="submit" class="btn btn-primary btn-block" value="Commencer">
+                        </div>
                 </div>
-            </form>
+            </div>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-1"></div>
     </div>
-        </div>
-                        <div><a href="styleInsert.jsp">Ici</a><a href="selectionStyle.jsp">Ici2</a></div>
-    <script src="css/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+
+
+    <jsp:include page="inc/footer.jsp"/>
 </body>
+
 </html>
